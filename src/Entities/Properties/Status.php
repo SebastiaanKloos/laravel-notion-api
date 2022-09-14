@@ -14,6 +14,8 @@ class Status extends Property implements Modifiable
 
     protected function fillFromRaw(): void
     {
+        parent::fillFromRaw();
+
         $this->content = $this->responseData['status'];
     }
 

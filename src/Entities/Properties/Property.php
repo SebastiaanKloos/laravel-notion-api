@@ -103,8 +103,6 @@ class Property extends Entity
      */
     public function getType(): string
     {
-        ray($this);
-
         return $this->type;
     }
 
