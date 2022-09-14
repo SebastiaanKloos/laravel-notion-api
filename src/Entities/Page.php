@@ -144,8 +144,6 @@ class Page extends Entity
      */
     private function fillProperties(): void
     {
-        ray($this->responseData);
-
         if (Arr::exists($this->responseData, 'properties')) {
             $this->rawProperties = $this->responseData['properties'];
             $this->properties = new Collection();
