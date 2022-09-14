@@ -103,6 +103,8 @@ class Property extends Entity
      */
     public function getType(): string
     {
+        ray($this);
+
         return $this->type;
     }
 
@@ -176,6 +178,7 @@ class Property extends Entity
             case 'last_edited_time':
             case 'files':
             case 'formula':
+            case 'status':
             case 'rollup':
                 $class = str_replace('_', '', ucwords($type, '_'));
 
